@@ -114,6 +114,7 @@ body {
     text-transform: uppercase;
 }
 
+.plans-hero h1,
 .plans-hero h2 {
     font-family: Georgia, "Times New Roman", serif;
 
@@ -128,6 +129,7 @@ body {
     margin-bottom: 25px;
 }
 
+.plans-hero h1 span,
 .plans-hero h2 span {
     color: #1d4f91;
 }
@@ -252,7 +254,6 @@ body {
 
     color: #14213d;
 
-    white-space: nowrap;
 }
 
 
