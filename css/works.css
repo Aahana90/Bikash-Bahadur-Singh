@@ -1,0 +1,1199 @@
+/* =========================================================
+   WORKS PAGE
+   CLEAN NAVY + WHITE EDITORIAL DESIGN
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", Arial, sans-serif;
+    background: #ffffff;
+    color: #0b1b3a;
+    line-height: 1.7;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    width: 100%;
+    min-height: 86px;
+
+    padding: 16px 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+/* LOGO */
+
+.logo-area {
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+}
+
+
+/* V */
+
+.logo-mark {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #0b1b3a;
+
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 23px;
+}
+
+
+/* NAME */
+
+.logo-text h3 {
+    margin: 0;
+
+    color: #0b1b3a;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 17px;
+
+    font-weight: 500;
+}
+
+
+/* TAGLINE */
+
+.logo-text p {
+    margin-top: 2px;
+
+    color: #8a9ab5;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navigation {
+    display: flex;
+    align-items: center;
+
+    gap: 32px;
+}
+
+.navigation a {
+    position: relative;
+
+    padding: 8px 0;
+
+    color: #59657a;
+
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+
+/* UNDERLINE */
+
+.navigation a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 1px;
+
+    background: #0b1b3a;
+
+    transition: width 0.3s ease;
+}
+
+
+/* HOVER */
+
+.navigation a:hover {
+    color: #0b1b3a;
+}
+
+.navigation a:hover::after {
+    width: 100%;
+}
+
+
+/* ACTIVE */
+
+.navigation a.active {
+    color: #0b1b3a;
+}
+
+.navigation a.active::after {
+    width: 100%;
+}
+
+
+/* GET IN TOUCH */
+
+.navigation .touch-btn {
+    padding: 11px 19px;
+
+    background: #0b1b3a;
+
+    color: #ffffff;
+
+    border: 1px solid #0b1b3a;
+}
+
+.navigation .touch-btn::after {
+    display: none;
+}
+
+.navigation .touch-btn:hover {
+    background: #16294d;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.works-hero {
+    min-height: 72vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 100px 25px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(11, 27, 58, 0.65),
+            rgba(11, 27, 58, 0.65)
+        ),
+        url("../images/works-hero.jpg") center / cover no-repeat;
+}
+
+
+/* HERO CONTENT */
+
+.works-hero-content {
+    max-width: 850px;
+
+    color: #ffffff;
+
+    animation: fadeUp 1s ease;
+}
+
+
+/* SMALL TITLE */
+
+.small-title {
+    margin-bottom: 20px;
+
+    color: #ffffff;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    font-weight: 600;
+}
+
+
+/* HERO TITLE */
+
+.works-hero h1 {
+    margin-bottom: 28px;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: clamp(48px, 7vw, 82px);
+
+    line-height: 1.05;
+
+    font-weight: 400;
+}
+
+.works-hero h1 em {
+    color: #dce6f5;
+
+    font-style: italic;
+
+    font-weight: 400;
+}
+
+
+/* HERO TEXT */
+
+.hero-text {
+    max-width: 650px;
+
+    margin: 0 auto 35px;
+
+    color: #f2f5f9;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+}
+
+
+/* EXPLORE BUTTON */
+
+.explore-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 13px 23px;
+
+    border: 1px solid rgba(255, 255, 255, 0.75);
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    transition: 0.3s ease;
+}
+
+.explore-btn:hover {
+    background: #ffffff;
+
+    color: #0b1b3a;
+}
+
+.explore-btn span {
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.works-intro {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 105px 25px 90px;
+
+    text-align: center;
+}
+
+
+/* SECTION LABEL */
+
+.section-label {
+    margin-bottom: 16px;
+
+    color: #0b1b3a;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+}
+
+
+/* INTRO TITLE */
+
+.works-intro h2 {
+    margin-bottom: 30px;
+
+    color: #0b1b3a;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: clamp(36px, 5vw, 56px);
+
+    line-height: 1.15;
+
+    font-weight: 400;
+}
+
+.works-intro h2 em {
+    color: #0b1b3a;
+
+    font-style: italic;
+
+    font-weight: 400;
+}
+
+
+/* INTRO PARAGRAPHS */
+
+.works-intro > p:not(.section-label) {
+    max-width: 730px;
+
+    margin: 13px auto;
+
+    color: #526176;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   WORKS CONTAINER
+========================================================= */
+
+.works-container {
+    width: 100%;
+
+    padding: 0 40px 120px;
+
+    background: #f8fafc;
+}
+
+
+/* =========================================================
+   TWO COLUMN GRID
+========================================================= */
+
+.works-grid {
+    max-width: 1450px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 32px;
+}
+
+
+/* =========================================================
+   WORK CARD
+========================================================= */
+
+.work-card {
+    background: #ffffff;
+
+    border: 1px solid #e3e8ef;
+
+    padding: 34px;
+
+    box-shadow:
+        0 8px 30px rgba(11, 27, 58, 0.06);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+/* HOVER */
+
+.work-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 18px 45px rgba(11, 27, 58, 0.11);
+}
+
+
+/* FEATURED */
+
+.featured-card {
+    border-top: 4px solid #0b1b3a;
+}
+
+
+/* =========================================================
+   WORK TITLE
+========================================================= */
+
+.work-title {
+    min-height: 105px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 18px;
+
+    margin-bottom: 25px;
+}
+
+
+/* NUMBER */
+
+.work-number {
+    flex-shrink: 0;
+
+    padding-top: 5px;
+
+    color: #71809a;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+
+    font-weight: 600;
+}
+
+
+/* LABEL */
+
+.work-label {
+    margin-bottom: 9px;
+
+    color: #6c7b91;
+
+    font-size: 9px;
+
+    letter-spacing: 2.5px;
+
+    font-weight: 600;
+}
+
+
+/* WORK HEADING */
+
+.work-title h2 {
+    color: #0b1b3a;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: clamp(28px, 3vw, 39px);
+
+    line-height: 1.13;
+
+    font-weight: 400;
+}
+
+.work-title h2 em {
+    color: #0b1b3a;
+
+    font-style: italic;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   IMAGE / VIDEO BOX
+========================================================= */
+
+.media-box {
+    width: 100%;
+
+    height: 340px;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+
+    background: #e9edf2;
+
+    box-shadow:
+        0 7px 22px rgba(11, 27, 58, 0.09);
+}
+
+
+/* IMAGE */
+
+.media-box img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+
+/* IMAGE HOVER */
+
+.work-card:hover .media-box img {
+    transform: scale(1.035);
+}
+
+
+/* VIDEO */
+
+.media-box video {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    background: #0b1b3a;
+}
+
+
+/* =========================================================
+   WORK CONTENT
+========================================================= */
+
+.work-content {
+    padding-top: 27px;
+}
+
+
+/* PARAGRAPH */
+
+.work-content p {
+    margin-bottom: 15px;
+
+    color: #526176;
+
+    font-size: 15px;
+
+    line-height: 1.85;
+}
+
+
+/* LIST */
+
+.work-content ul {
+    margin-top: 20px;
+
+    padding-left: 23px;
+
+    color: #40516a;
+}
+
+.work-content li {
+    margin-bottom: 9px;
+
+    padding-left: 5px;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+.work-content li::marker {
+    color: #0b1b3a;
+}
+
+
+/* =========================================================
+   DONATION HIGHLIGHT
+========================================================= */
+
+.donation-highlight {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 17px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    background: #f4f7fa;
+
+    border: 1px solid #dce4ed;
+
+    border-radius: 10px;
+}
+
+
+.donation-highlight span {
+    color: #536278;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.donation-highlight strong {
+    color: #0b1b3a;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 21px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   GALLERY
+========================================================= */
+
+.works-gallery {
+    padding: 105px 40px;
+
+    background: #ffffff;
+
+    text-align: center;
+}
+
+
+.gallery-heading {
+    margin-bottom: 50px;
+}
+
+
+.works-gallery h2 {
+    color: #0b1b3a;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: clamp(38px, 5vw, 58px);
+
+    line-height: 1.1;
+
+    font-weight: 400;
+}
+
+
+.works-gallery h2 em {
+    font-style: italic;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   GALLERY GRID
+========================================================= */
+
+.gallery-grid {
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 16px;
+}
+
+
+.gallery-item {
+    height: 300px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background: #eef2f6;
+}
+
+
+.gallery-item img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   CLOSING SECTION
+========================================================= */
+
+.works-closing {
+    padding: 110px 25px;
+
+    background: #0b1b3a;
+
+    text-align: center;
+
+    color: #ffffff;
+}
+
+
+.works-closing .section-label {
+    color: #b9c7dc;
+}
+
+
+.works-closing h2 {
+    margin-bottom: 28px;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: clamp(40px, 5vw, 65px);
+
+    line-height: 1.1;
+
+    font-weight: 400;
+}
+
+
+.works-closing h2 em {
+    font-style: italic;
+
+    color: #dce6f5;
+}
+
+
+.works-closing > p:last-child {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #c8d2e0;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    padding: 65px 20px 35px;
+
+    background: #071326;
+
+    text-align: center;
+
+    color: #ffffff;
+}
+
+
+footer h2 {
+    margin-bottom: 8px;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 27px;
+
+    font-weight: 400;
+}
+
+
+footer p {
+    color: #aebbd0;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+}
+
+
+.footer-line {
+    width: 70px;
+
+    height: 1px;
+
+    margin: 28px auto;
+
+    background: #7e91ad;
+}
+
+
+footer small {
+    color: #8d9bb0;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   ANIMATION
+========================================================= */
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .navbar {
+        padding: 16px 4%;
+    }
+
+    .navigation {
+        gap: 20px;
+    }
+
+    .works-container {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .work-card {
+        padding: 27px;
+    }
+
+    .media-box {
+        height: 300px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        flex-direction: column;
+
+        padding: 17px 20px;
+
+        gap: 15px;
+    }
+
+
+    .logo-area {
+        justify-content: center;
+    }
+
+
+    .navigation {
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 10px 17px;
+    }
+
+
+    .navigation a {
+        font-size: 9px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .navigation .touch-btn {
+        display: none;
+    }
+
+
+    /* HERO */
+
+    .works-hero {
+        min-height: 65vh;
+
+        padding: 80px 20px;
+    }
+
+
+    .works-hero h1 {
+        font-size: 49px;
+    }
+
+
+    .hero-text {
+        font-size: 14px;
+    }
+
+
+    /* INTRO */
+
+    .works-intro {
+        padding: 80px 22px 70px;
+    }
+
+
+    .works-intro h2 {
+        font-size: 39px;
+    }
+
+
+    .works-intro > p:not(.section-label) {
+        font-size: 14px;
+    }
+
+
+    /* WORK GRID */
+
+    .works-container {
+        padding: 0 18px 80px;
+    }
+
+
+    .works-grid {
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+    }
+
+
+    .work-card {
+        padding: 23px;
+    }
+
+
+    .work-title {
+        min-height: auto;
+
+        margin-bottom: 20px;
+    }
+
+
+    .work-title h2 {
+        font-size: 30px;
+    }
+
+
+    .media-box {
+        height: 270px;
+
+        border-radius: 11px;
+    }
+
+
+    .work-content {
+        padding-top: 23px;
+    }
+
+
+    .work-content p {
+        font-size: 14px;
+
+        line-height: 1.8;
+    }
+
+
+    .work-content li {
+        font-size: 13px;
+    }
+
+
+    /* DONATION */
+
+    .donation-highlight {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    /* GALLERY */
+
+    .works-gallery {
+        padding: 80px 18px;
+    }
+
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+
+    .gallery-item {
+        height: 220px;
+    }
+
+
+    /* CLOSING */
+
+    .works-closing {
+        padding: 80px 22px;
+    }
+
+
+    .works-closing h2 {
+        font-size: 43px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .logo-mark {
+        width: 42px;
+        height: 42px;
+    }
+
+
+    .logo-text h3 {
+        font-size: 14px;
+    }
+
+
+    .logo-text p {
+        font-size: 7px;
+
+        letter-spacing: 1.3px;
+    }
+
+
+    .navigation {
+        gap: 9px 13px;
+    }
+
+
+    .works-hero h1 {
+        font-size: 40px;
+    }
+
+
+    .works-intro h2 {
+        font-size: 34px;
+    }
+
+
+    .work-title h2 {
+        font-size: 27px;
+    }
+
+
+    .media-box {
+        height: 235px;
+    }
+
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .gallery-item {
+        height: 280px;
+    }
+
+
+    footer h2 {
+        font-size: 23px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

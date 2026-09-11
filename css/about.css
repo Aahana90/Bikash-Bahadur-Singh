@@ -1,0 +1,726 @@
+/* =========================================================
+   ABOUT PAGE
+   Vikash Bahadur Singh
+========================================================= */
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #101c3a;
+    font-family: "DM Sans", sans-serif;
+}
+
+main {
+    width: 100%;
+}
+
+
+/* =========================================================
+   MAIN ABOUT INTRO
+========================================================= */
+
+.about-section {
+    width: min(1400px, 92%);
+    margin: 0 auto;
+    padding: 110px 0 80px;
+}
+
+.about-number {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    font-style: italic;
+    color: #a8b7d0;
+    margin-bottom: 18px;
+}
+
+.about-content {
+    width: 100%;
+    max-width: 1250px;
+}
+
+.section-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #8a9ab5;
+    margin: 0 0 18px;
+}
+
+.about-content > h1 {
+    max-width: 850px;
+    margin: 0 0 24px;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(48px, 6vw, 82px);
+    line-height: 1.05;
+    font-weight: 400;
+    letter-spacing: -2px;
+    color: #101c3a;
+}
+
+.about-content > h1 span {
+    color: #60718e;
+}
+
+.about-intro {
+    max-width: 760px;
+    margin: 0 0 80px;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #60718e;
+}
+
+
+/* =========================================================
+   WORKS LIST
+========================================================= */
+
+.works-list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================================
+   INDIVIDUAL WORK ITEM
+
+   IMPORTANT:
+   This is what fixes the tiny images and huge spaces.
+========================================================= */
+
+.work-item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+    gap: 55px;
+    align-items: center;
+
+    padding: 55px 0;
+    margin: 0;
+
+    border-top: 1px solid #e4e8ef;
+}
+
+
+/* Number */
+
+.work-number {
+    display: none;
+}
+
+
+/* =========================================================
+   WORK IMAGE
+========================================================= */
+
+.work-item > img {
+    display: block;
+
+    width: 300px;
+    height: 330px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 22px;
+
+    box-shadow: 0 20px 45px rgba(16, 28, 58, 0.10);
+}
+
+
+/* =========================================================
+   WORK TEXT
+========================================================= */
+
+.work-content {
+    width: 100%;
+    max-width: 760px;
+    padding: 0;
+}
+
+.work-content h3 {
+    margin: 0 0 18px;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(38px, 4vw, 58px);
+    line-height: 1.08;
+    font-weight: 400;
+
+    color: #101c3a;
+}
+
+.work-content p {
+    max-width: 720px;
+    margin: 0;
+
+    font-size: 19px;
+    line-height: 1.8;
+
+    color: #60718e;
+}
+
+
+/* =========================================================
+   ALTERNATING WORK LAYOUT
+
+   01  IMAGE | TEXT
+   02  TEXT  | IMAGE
+   03  IMAGE | TEXT
+========================================================= */
+
+.work-item:nth-child(even) {
+    grid-template-columns: minmax(0, 1fr) 300px;
+}
+
+.work-item:nth-child(even) > img {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.work-item:nth-child(even) .work-content {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+
+/* =========================================================
+   COMMUNITY SERVICE SECTION
+========================================================= */
+
+.community-service {
+    width: 100%;
+    margin-top: 80px;
+    padding-top: 100px;
+
+    border-top: 1px solid #e4e8ef;
+}
+
+
+/* =========================================================
+   COMMUNITY HEADER
+========================================================= */
+
+.community-service-header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px minmax(0, 1fr);
+    gap: 40px;
+
+    margin-bottom: 90px;
+}
+
+.community-service-number {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    font-style: italic;
+    color: #a8b7d0;
+}
+
+.community-service-heading {
+    max-width: 1000px;
+}
+
+.community-service-label {
+    margin: 0 0 18px;
+
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+
+    color: #8a9ab5;
+}
+
+.community-service-heading h2 {
+    margin: 0 0 25px;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(46px, 5vw, 72px);
+    line-height: 1.08;
+    font-weight: 400;
+
+    color: #101c3a;
+}
+
+.community-service-heading h2 span {
+    color: #60718e;
+}
+
+.community-service-intro {
+    max-width: 800px;
+    margin: 0;
+
+    font-size: 19px;
+    line-height: 1.8;
+
+    color: #60718e;
+}
+
+
+/* =========================================================
+   COMMUNITY PHOTO ROWS
+========================================================= */
+
+.community-photo-row {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: minmax(320px, 1fr) minmax(320px, 1fr);
+
+    gap: 80px;
+    align-items: center;
+
+    padding: 80px 0;
+
+    border-top: 1px solid #e4e8ef;
+}
+
+
+/* Reverse row */
+
+.community-photo-row.reverse {
+    grid-template-columns: minmax(320px, 1fr) minmax(320px, 1fr);
+}
+
+
+/* =========================================================
+   COMMUNITY IMAGES
+========================================================= */
+
+.community-photo {
+    width: 100%;
+}
+
+.community-photo img {
+    display: block;
+
+    width: 100%;
+    height: 520px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 24px;
+
+    box-shadow: 0 25px 55px rgba(16, 28, 58, 0.12);
+}
+
+
+/* =========================================================
+   COMMUNITY TEXT
+========================================================= */
+
+.community-photo-text {
+    width: 100%;
+    max-width: 650px;
+}
+
+.community-photo-number {
+    display: block;
+
+    margin-bottom: 18px;
+
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    font-style: italic;
+
+    color: #a8b7d0;
+}
+
+.community-photo-text h3 {
+    margin: 0 0 22px;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(38px, 4vw, 58px);
+    line-height: 1.1;
+    font-weight: 400;
+
+    color: #101c3a;
+}
+
+.community-photo-text p {
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 1.85;
+
+    color: #60718e;
+}
+
+
+/* =========================================================
+   REVERSE COMMUNITY ROW
+========================================================= */
+
+.community-photo-row.reverse .community-photo-text {
+    order: 1;
+}
+
+.community-photo-row.reverse .community-photo {
+    order: 2;
+}
+
+
+/* =========================================================
+   CLOSING MESSAGE
+========================================================= */
+
+.community-service-closing {
+    width: 100%;
+
+    margin-top: 20px;
+    padding: 75px 0 20px;
+
+    border-top: 1px solid #e4e8ef;
+}
+
+.community-service-closing p {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(24px, 3vw, 38px);
+    line-height: 1.5;
+
+    color: #101c3a;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    margin-top: 100px;
+    padding: 70px 6% 25px;
+
+    border-top: 1px solid #e4e8ef;
+
+    background: #f8f9fb;
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+}
+
+.footer-brand h3 {
+    margin: 0 0 10px;
+
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    font-weight: 500;
+
+    color: #101c3a;
+}
+
+.footer-brand p {
+    margin: 0;
+
+    font-size: 14px;
+    letter-spacing: 1px;
+
+    color: #60718e;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    margin: 0 0 18px;
+
+    font-size: 12px;
+    letter-spacing: 2px;
+
+    color: #8a9ab5;
+}
+
+.footer-links a {
+    display: block;
+
+    width: fit-content;
+
+    margin-bottom: 10px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    color: #60718e;
+
+    transition: color 0.25s ease;
+}
+
+.footer-links a:hover {
+    color: #101c3a;
+}
+
+.footer-contact p {
+    margin: 0 0 6px;
+
+    font-size: 15px;
+
+    color: #60718e;
+}
+
+.footer-bottom {
+    max-width: 1400px;
+
+    margin: 60px auto 0;
+    padding-top: 20px;
+
+    border-top: 1px solid #e1e5eb;
+
+    font-size: 13px;
+    color: #8a9ab5;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .about-section {
+        width: 88%;
+        padding-top: 80px;
+    }
+
+    .about-content > h1 {
+        font-size: 58px;
+    }
+
+    .work-item,
+    .work-item:nth-child(even) {
+        grid-template-columns: 260px minmax(0, 1fr);
+        gap: 40px;
+    }
+
+    .work-item:nth-child(even) > img {
+        grid-column: 2;
+    }
+
+    .work-item:nth-child(even) .work-content {
+        grid-column: 1;
+    }
+
+    .work-item > img {
+        width: 260px;
+        height: 310px;
+    }
+
+    .work-content h3 {
+        font-size: 42px;
+    }
+
+    .community-photo-row,
+    .community-photo-row.reverse {
+        gap: 50px;
+    }
+
+    .community-photo img {
+        height: 430px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1.5fr 1fr 1fr;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .about-section {
+        width: 90%;
+        padding: 60px 0 50px;
+    }
+
+    .about-number {
+        font-size: 18px;
+    }
+
+    .about-content > h1 {
+        font-size: 44px;
+        letter-spacing: -1px;
+    }
+
+    .about-intro {
+        margin-bottom: 50px;
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+
+    /* -----------------------------------------
+       WORK ITEMS
+    ----------------------------------------- */
+
+    .work-item,
+    .work-item:nth-child(even) {
+        display: flex;
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+
+        padding: 45px 0;
+    }
+
+    .work-item > img {
+        width: 100%;
+        max-width: 420px;
+        height: 300px;
+
+        border-radius: 20px;
+    }
+
+    .work-item:nth-child(even) > img {
+        order: 1;
+    }
+
+    .work-item:nth-child(even) .work-content {
+        order: 2;
+    }
+
+    .work-content {
+        max-width: 100%;
+    }
+
+    .work-content h3 {
+        font-size: 38px;
+    }
+
+    .work-content p {
+        font-size: 17px;
+        line-height: 1.75;
+    }
+
+
+    /* -----------------------------------------
+       COMMUNITY
+    ----------------------------------------- */
+
+    .community-service {
+        margin-top: 50px;
+        padding-top: 60px;
+    }
+
+    .community-service-header {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .community-service-number {
+        margin-bottom: 20px;
+    }
+
+    .community-service-heading h2 {
+        font-size: 43px;
+    }
+
+    .community-service-intro {
+        font-size: 17px;
+    }
+
+    .community-photo-row,
+    .community-photo-row.reverse {
+        display: flex;
+        flex-direction: column;
+
+        gap: 30px;
+
+        padding: 55px 0;
+    }
+
+    .community-photo-row.reverse .community-photo,
+    .community-photo-row.reverse .community-photo-text {
+        order: initial;
+    }
+
+    .community-photo img {
+        width: 100%;
+        height: 350px;
+
+        border-radius: 20px;
+    }
+
+    .community-photo-text h3 {
+        font-size: 38px;
+    }
+
+    .community-photo-text p {
+        font-size: 17px;
+        line-height: 1.75;
+    }
+
+
+    /* -----------------------------------------
+       FOOTER
+    ----------------------------------------- */
+
+    footer {
+        margin-top: 60px;
+        padding: 50px 7% 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .footer-bottom {
+        margin-top: 40px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+
+    .about-content > h1 {
+        font-size: 38px;
+    }
+
+    .work-content h3 {
+        font-size: 34px;
+    }
+
+    .work-item > img {
+        height: 270px;
+    }
+
+    .community-service-heading h2 {
+        font-size: 36px;
+    }
+
+    .community-photo-text h3 {
+        font-size: 34px;
+    }
+
+    .community-photo img {
+        height: 300px;
+    }
+}
